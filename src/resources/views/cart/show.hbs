@@ -1,0 +1,39 @@
+
+<div class="container" >
+  <h1 style="text-align: center;padding: 32px 0">CART</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Hình ảnh</th>
+        <th scope="col">Tên</th>
+        <th scope="col">Số Lượng</th>
+        <th scope="col">Tổng tiền</th>
+        <th scope="col"><i class="fa-regular fa-trash-can"></i></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each data}}
+      <tr>
+        <td>
+          <img src="{{this.image}}" alt="" style="width: 100px; object-fit:cover, border-radius: 8px">
+        </td>
+        <td>
+          <p>{{this.name}}</p>
+        </td>
+        <td>
+          <p>{{this.quantity}}</p>
+        </td>
+        <td>
+          <p>{{multiple this.price this.quantity}}</p>
+        </td>
+        <td><a href="/cart/remove/{{this._id}}"><i class="fa-regular fa-trash-can"></i></a></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <div style="float:right;">
+    <a href="/cart/checkout" style="color: white;">
+    <button type="button" class="btn btn-danger btn-lg">Thanh Toán</button>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container" style="padding: 32px 0;">
+    <h1>Quản lý đơn hàng</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id User</th>
+                <th scope="col">Name</th>
+                <th scope="col">Total</th>
+                <th scope="col">Address</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each invoice}}
+            <tr>
+                <td>{{this.userId}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.totalAmount}}</td>
+                <td>{{this.address}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.phone}}</td>
+                <td>{{this.createdAt}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+
+
+</div>

@@ -1,0 +1,26 @@
+.header-product-gear {
+  height: 300px;
+  width: 100%;
+  padding-top: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head-collections {
+  padding: 30px;
+}
+
+.collections {
+  background-color: #ccc;
+  height: auto;
+}
+
+.gear-deck {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../resources/scss/gear.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEF;EACE;;;AAEF;EACE;EACA;;;AAEF;EACE;EACA;EACA%22,%22file%22:%22gear.css%22%7D */

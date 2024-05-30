@@ -1,0 +1,30 @@
+.box-content-teams {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background-color: rgb(252, 83, 6);
+  color: white;
+}
+
+.box-content-teams h2 {
+  text-transform: uppercase;
+}
+
+.person-built {
+  background-color: #272727;
+  display: flex;
+  justify-content: space-around;
+}
+
+.person-detail {
+  margin: 40px 0;
+}
+
+.person-detail p {
+  color: white;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../resources/scss/teams.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEF;EACE;;;AAGF;EACE;EACA;EACA;;;AAEF;EACE;;;AAEF;EACE%22,%22file%22:%22teams.css%22%7D */

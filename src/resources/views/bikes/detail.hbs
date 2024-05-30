@@ -1,0 +1,61 @@
+<div>
+  <div class="product-item" style="display: flex;">
+    <div class="img-product-item ml-4 mr-4 mb-4">
+      <img src="{{bike.image}}" alt="">
+    </div>
+
+    <div class="detail-product-item ml-4 ">
+      <h1 class="product-item">{{bike.name}}</h1>
+      <h3 class="product-item">{{bike.price}} USD</h3>
+      <hr>
+      <p class="product-item">{{bike.description}}</p>
+      <hr>
+      <form id="addOrder">
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="99" value="1">
+        <input type="hidden" value="{{bike._id}}" name="idProduct" id="idProduct">
+        <button type="submit" class="btn btn-success">ADD TO CART</button>
+      </form>
+    </div>
+  </div>
+  <style>
+    .product-item{
+      padding: 16px 0;
+    }
+  </style>
+</div>
+
+<script>
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const quantity = document.querySelector('#quantity').value;
+
+    if (!quantity) {
+      await Swal.fire({
+        title: 'Error!',
+        text: 'Please enter product quantity!',
+        icon: 'error',
+        confirmButtonText: 'Ok'
+      })
+      return
+    }
+    const productId = document.querySelector('#idProduct').value
+    const dataCart = { productId, quantity }
+    try {
+      const res = await fetch(`/cart/order`, {
+        method: 'POST',
+        body: JSON.stringify(dataCart),
+        headers: { 'Content-Type': 'application/json' }
+      });
+      location.assign('/cart/order');
+
+    }
+    catch (err) {
+      console.log(err);
+    }
+
+  })
+
+</script>

@@ -1,0 +1,21 @@
+.header-product-gear {
+  height: 300px;
+  width: 100%;
+  padding-top: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.head-collections {
+  padding: 30px;
+}
+.collections {
+  background-color: #ccc;
+  height: auto;
+}
+.gear-deck {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

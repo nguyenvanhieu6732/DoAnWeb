@@ -1,0 +1,15 @@
+<div class="content container" style="padding: 64px 0;">
+    {{#if (eq code "00")}}
+    <h1 style="text-align: center;">Giao Dịch thành công</h1>
+    <h3 style="text-align: center;">Cảm ơn quý khách đã ủng hộ sản phẩm của doanh nghiệp</h3>
+    <a href="/" style="display: block; text-align:center; padding: 24px 0">
+        <button type="button" class="btn btn-primary btn-lg center">Quay về trang chủ</button>
+    </a>
+    {{else}}
+    <h1 style="text-align: center; color: red;">GD thất bại</h1>
+    <a href="/cart/checkout" style="display: block; text-align:center; padding: 24px 0">
+        <button type="button" class="btn btn-primary btn-lg center">Kiểm tra thanh toán</button>
+    </a>
+    {{/if}}
+
+</div>

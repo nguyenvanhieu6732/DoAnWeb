@@ -1,0 +1,9 @@
+.news-deck {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.news-item{
+  margin: 15px;
+}

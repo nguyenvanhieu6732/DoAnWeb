@@ -1,0 +1,20 @@
+<div class="container">
+    <h1 style="text-align: center; padding: 32px 0">
+        THÔNG KÊ DOANH THU THEO NGÀY
+    </h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ngày</th>
+                <th scope="col">Doanh Thu</th>
+        </thead>
+        <tbody>
+            {{#each dailyRevenue}}
+            <tr>
+                <td>{{this._id}}</td>
+                <td>{{this.totalRevenue}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

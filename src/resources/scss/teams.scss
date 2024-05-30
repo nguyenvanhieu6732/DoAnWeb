@@ -1,0 +1,25 @@
+.box-content-teams {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background-color: rgb(252 83 6);
+  color: white;
+}
+.box-content-teams h2{
+  text-transform: uppercase;
+
+}
+.person-built{
+  background-color: #272727;
+  display: flex;
+  justify-content: space-around;
+}
+.person-detail{
+  margin: 40px 0;
+}
+.person-detail p{
+  color: white;
+}
